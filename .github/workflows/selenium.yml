@@ -2,8 +2,6 @@ name: Run Selenium SIDE File
 
 on:
   workflow_dispatch: # Allows manual trigger
-  schedule:
-    - cron: "0 6 * * *" # Runs daily at 6:00 AM (adjust as needed)
 
 jobs:
   run-side:
@@ -21,5 +19,9 @@ jobs:
     - name: Install Selenium SIDE Runner
       run: npm install -g selenium-side-runner
 
-    - name: Run SIDE File
-      run: selenium-side-runner tests/feza smart.side
+    - name: Run SIDE File in Loop
+      run: |
+        for i in {1..6}; do
+          selenium-side-runner "tests/feza smart.side"
+          sleep 10
+        done
