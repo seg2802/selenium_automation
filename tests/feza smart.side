@@ -1,0 +1,120 @@
+{
+  "id": "f6801fbb-a38e-4e7c-87cc-23c93004f823",
+  "version": "2.0",
+  "name": "feza smart",
+  "url": " https://fezasmart.com",
+  "tests": [{
+    "id": "cfbe7143-5db7-4718-b5e0-e3d019b9f638",
+    "name": "feza",
+    "commands": [{
+      "id": "90fd4e2d-e9b5-4da3-86cc-1d604e832ea1",
+      "comment": "",
+      "command": "open",
+      "target": "https://fezasmart.com/Security/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e5c25ec-2162-4417-8d3c-5ea899ebaa68",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1df63d1e-c0cc-4537-80d2-446c7839c64e",
+      "comment": "",
+      "command": "click",
+      "target": "id=UserName",
+      "targets": [
+        ["id=UserName", "id"],
+        ["name=UserName", "name"],
+        ["css=#UserName", "css:finder"],
+        ["xpath=//input[@id='UserName']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40677518-a480-4039-b44b-5c9fc238f11f",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserName",
+      "targets": [
+        ["id=UserName", "id"],
+        ["name=UserName", "name"],
+        ["css=#UserName", "css:finder"],
+        ["xpath=//input[@id='UserName']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "sraymond"
+    }, {
+      "id": "eba50fec-3035-4dbc-bfcd-e7a3d4b21093",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43dabc44-ce7e-4a5d-9875-cc6df21fa3d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "99519951"
+    }, {
+      "id": "4cad3234-f284-491a-a152-6d1008f550e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=LoginAs",
+      "targets": [
+        ["id=LoginAs", "id"],
+        ["name=LoginAs", "name"],
+        ["css=#LoginAs", "css:finder"],
+        ["xpath=//select[@id='LoginAs']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Staff\nParent\nStudent\nHost')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b908e2d-131c-4352-a73b-20efe166d320",
+      "comment": "",
+      "command": "select",
+      "target": "id=LoginAs",
+      "targets": [],
+      "value": "label=Student"
+    }, {
+      "id": "52ce7acc-6685-4e60-8def-fec41abeab1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0ea76308-f859-4e84-a45b-1888ed8b9352",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cfbe7143-5db7-4718-b5e0-e3d019b9f638"]
+  }],
+  "urls": ["https://fezasmart.com/"],
+  "plugins": []
+}
