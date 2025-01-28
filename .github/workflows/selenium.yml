@@ -5,7 +5,7 @@ on:
 
 jobs:
   run-side:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout Code
@@ -21,7 +21,7 @@ jobs:
 
     - name: Run SIDE File in Loop
       run: |
-        for i in {1..6}; do
+        for /l %i in (1,1,6) do (
           selenium-side-runner "tests/feza smart.side"
-          sleep 10
-        done
+          timeout /t 10
+        )
