@@ -22,4 +22,4 @@ jobs:
       run: npm install -g selenium-side-runner
 
     - name: Run SIDE File
-      run: selenium-side-runner automation/your-file.side
+      run: selenium-side-runner tests/feza smart.side
